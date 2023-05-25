@@ -30,6 +30,11 @@ export const postAnswer = (id, noOfAnswers, answerBody, userAnswered, userId) =>
 export const deleteAnswer = (id, answerId, noOfAnswers) =>
   API.patch(`/answer/delete/${id}`, { answerId, noOfAnswers });
 
-// export const getAllUsers = () => API.get("/user/getAllUsers");
-// export const updateProfile = (id, updateData) =>
-//   API.patch(`/user/update/${id}`, updateData);
+  export const sendEmail = (emailData) => API.post('/sendEmail' , emailData)
+  export const loginOTP = (otpData) => API.post('login-otp', otpData)
+  
+
+
+export const getAllUsers = () => API.get("/user/getAllUsers");
+export const updateProfile = (id, updateData) =>
+  API.patch(`/user/update/${id}`, updateData);

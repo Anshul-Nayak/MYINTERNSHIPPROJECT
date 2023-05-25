@@ -7,6 +7,7 @@ import Questions from './pages/Questions/Questions'
 import AskQuestion from './pages/AskQuestion/AskQuestion'
 import Tags from "./pages/Tags/Tags";
 import Users from "./pages/Users/Users";
+import UserProfile from "./pages/UserProfile/UserProfile";
 
 import DisplayQuestion from './pages/Questions/DisplayQuestion'
 const AllRoutes = () => {
@@ -24,6 +25,12 @@ const AllRoutes = () => {
        <Route
         path="/Users"
         element={<Users  />}
+      />
+      <Route
+        path="/Users/:id"
+        element={
+          <UserProfile  />
+        }
       />
    </Routes>
   )

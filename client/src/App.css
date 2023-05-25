@@ -19,3 +19,20 @@
   }
 }
 
+.open-chatbot {
+  position: sticky;
+  bottom: 5%;
+  left: 5%;
+  background-color: #ef8236;
+  border: none;
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition:  ease-in-out 0.5s;
+  display: flex;
+}
+.open-chatbot:hover{
+  background-color: #fff;
+  border: 1.5px solid #ef8236;
+}
+

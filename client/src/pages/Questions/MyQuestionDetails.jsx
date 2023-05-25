@@ -10,7 +10,7 @@ import { useSelector, useDispatch } from "react-redux";
 import {
     postAnswer,
     deleteQuestion,
-    // voteQuestion,
+    voteQuestion,
 } from "../../actions/question";
 import Avatar from '../../components/Avatar/Avatar'
 import './Questions.css'
